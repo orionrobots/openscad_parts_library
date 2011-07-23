@@ -1,26 +1,15 @@
-module prism(l, w, h) { 
-	polyhedron(points = [
-		[0, 0, 0],
-		[0, 0, h],
-		[w, 0, 0],
-		[0, l, 0],
-		[w, l, 0],
-		[0, l, h]],
-		triangles = [
-			//left
-			[0, 1, 2],
-			//Hypoteneuse
-			[1, 5, 2],
-			[2, 5, 4],
-			//right
-			[4, 5, 3],
-			//back
-			[3, 5, 1],
-			[3, 1, 0],
-			//base
-			[0, 2, 3],
-			[2, 4, 3],
-		]); 
+//Draw a prism based on a 
+//right angled triangle
+//l - length of prism
+//w - width of triangle
+//h - height of triangle
+module prism2(l, w, h) {
+	translate([0, l, 0]) rotate( a= [90, 0, 0]) 
+	linear_extrude(height = l) polygon(points = [
+		[0, 0],
+		[w, 0],
+		[0, h]
+	], paths=[[0,1,2,0]]);
 }
 
-//prism(5, 3, 2);
+prism2(5, 3, 2);
