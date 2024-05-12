@@ -1,4 +1,4 @@
-//Draw a prism based on a 
+//Draw a triangular prism based on a 
 //right angled triangle
 //l - length of prism
 //w - width of triangle
