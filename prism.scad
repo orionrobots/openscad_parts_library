@@ -1,10 +1,10 @@
-//Draw a triangular prism based on a 
+//Draw a triangular prism based on a
 //right angled triangle
 //l - length of prism
 //w - width of triangle
 //h - height of triangle
 module prism(l, w, h) {
-	translate([0, l, 0]) rotate( a= [90, 0, 0]) 
+	translate([0, l, 0]) rotate( a= [90, 0, 0])
 	linear_extrude(height = l) polygon(points = [
 		[0, 0],
 		[w, 0],

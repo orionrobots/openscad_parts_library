@@ -16,7 +16,7 @@ module tapered_cuboid(w, l, h, taper) {
 		[ 0,  l, 0],
 		[ho, hl, h],
 		[hw, hl, h],
-		[ w,  l, 0] 
+		[ w,  l, 0]
 	], triangles = [
 		//side face
 		[0, 1, 2],

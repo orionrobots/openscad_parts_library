@@ -34,7 +34,7 @@ module plate1by1() {
 			difference() {
 				cube(size = [brick_width, brick_width, plate_height]);
 				translate(v = [skin_width, skin_width, -0.1]) {
-					cube(size = [inner_width, inner_width, 
+					cube(size = [inner_width, inner_width,
 				 		plate_height - skin_width + 0.2]);
 				}
 			}
