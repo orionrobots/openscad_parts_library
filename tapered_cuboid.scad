@@ -39,4 +39,4 @@ module tapered_cuboid(w, l, h, taper) {
 	] );
 }
 
-tapered_cuboid(4, 4, 2, 0.3);
+//tapered_cuboid(4, 4, 2, 0.3);
